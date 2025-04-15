@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=development
+    volumes:
+      - .:/app
+    restart: unless-stopped
+
+  # modify the database service
+  # db:
+  #   image: postgres:13
+  #   environment:
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=postgres
+  #     - POSTGRES_DB=interview
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   restart: unless-stopped
+
+# database service
+# volumes:
+#   postgres_data:
