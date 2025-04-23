@@ -28,6 +28,8 @@
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.31.2",
     "framer-motion": "^11.18.2",
+    "jspdf": "^3.0.1",
+    "jspdf-autotable": "^5.0.2",
     "lucide-react": "^0.395.0",
     "mini-svg-data-uri": "^1.4.4",
     "moment": "^2.30.1",
